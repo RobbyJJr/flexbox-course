@@ -2,9 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Learning Flexbox</title>
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            margin:0;
+            height: calc(100vh - 20px);
+            width: calc(100vw - 20px);
+            border: 10px solid red;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container > .img_blocks{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello  test Flexbox</h1>
+    <div class="container">
+        <div class="img_blocks">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+            <img src="tbot.png" alt="" width="150px" height="150px">
+        </div>
+    </div>
 </body>
 </html>
